@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contacta con FranCode para solicitar presupuesto, colaboraciones o consultoría digital. Respuesta en menos de 24 horas.">
+  <title>Contacto | FranCode</title>
+  <link rel="icon" type="image/png" href="./Image/FaviconLob.png">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header>
+    <a href="index.html" class="logo">
+      <div class="branding">
+        <div class="logo-img">
+          <img src="Image/FaviconLob.png" alt="Logo de FranCode">
+        </div>
+        <span class="logo-text">Fran<span>Code</span></span>
+      </div>
+    </a>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="sobre-mi.html">Sobre Mí</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="portafolio.html">Portafolio</a></li>
+        <li><a href="contacto.html" class="btn-nav active">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="section">
+    <div class="section-header">
+      <h1 class="animate">Trabajemos juntos</h1>
+      <p>Cuéntame tu idea y te responderé en menos de 24 horas.</p>
+    </div>
+
+    <section class="contact-wrapper">
+      <h2 class="visually-hidden">contacto</h2>
+
+      <div class="contact-grid">
+
+        <div class="contact-card">
+          <form id="contactForm" action="#gracias" method="get" novalidate>
+            
+            <div class="form-row">
+              <label for="name">Nombre</label>
+              <input id="name" name="name" type="text" placeholder="Tu nombre" required >
+            </div>
+
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="tu@ejemplo.com" required >
+            </div>
+
+            <div class="form-row">
+              <label for="subject">Asunto</label>
+              <input id="subject" name="subject" type="text" placeholder="Breve descripción" required >
+            </div>
+
+            <div class="form-row">
+              <label for="message">Mensaje</label>
+              <textarea id="message" name="message" rows="6" placeholder="Cuéntame sobre tu proyecto..." required></textarea>
+            </div>
+
+            <div class="form-actions">
+              <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+              <button type="reset" class="btn btn-secondary">Limpiar</button>
+            </div>
+          </form>
+
+          <div id="gracias" class="form-status success" aria-live="polite">
+            ¡Mensaje preparado! — Gracias, te responderé en menos de 24 horas.
+          </div>
+
+          <div class="contact-note mt-4">
+            <p>Si prefieres, también puedes escribir directamente a <a class="contact-link" href="mailto:hola@francode.com">hola@francode.com</a>.</p>
+          </div>
+        </div>
+
+        <aside class="contact-panel card" aria-labelledby="contact-panel-title">
+          <div class="contact-info">
+            <h2 id="contact-panel-title">Información</h2>
+            <p class="muted">Disponible para proyectos freelance y colaboraciones.</p>
+
+            <ul class="contact-methods">
+              <li><strong>Email:</strong> <a class="contact-link" href="mailto:hola@francode.com">hola@francode.com</a></li>
+              <li><strong>Teléfono:</strong> <a class="contact-link" href="tel:+34123456789">+34 123 456 789</a></li>
+              <li><strong>Horario:</strong> Lun-Vie 09:00-18:00 (CET)</li>
+            </ul>
+
+            <div class="divider" role="separator" aria-hidden="true"></div>
+
+            <h3>¿Qué necesito para empezar?</h3>
+            <ul class="brief-list">
+              <li>Objetivo del proyecto</li>
+              <li>Alcance y deadline</li>
+              <li>Presupuesto orientativo</li>
+            </ul>
+
+            <div class="divider" role="separator" aria-hidden="true"></div>
+
+            <a href="servicios.html" class="btn btn-secondary" style="margin-top:12px; display:inline-block;">Ver servicios</a>
+
+            <div class="socials" style="margin-top:18px;">
+              <a href="#" aria-label="LinkedIn">LinkedIn</a> ·
+              <a href="#" aria-label="Instagram">Instagram</a>
+            </div>
+          </div>
+        </aside>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-socials">
+      <a href="#" aria-label="Facebook">Facebook</a>
+      <a href="#" aria-label="X">X</a>
+      <a href="#" aria-label="LinkedIn">LinkedIn</a>
+      <a href="#" aria-label="Instagram">Instagram</a>
+    </div>
+    <p class="footer-copy">
+      © 2025 FranCode. Todos los derechos reservados.
+    </p>
+  </footer>
+
+</body>
+</html>
+
